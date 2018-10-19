@@ -2,7 +2,9 @@
 A Tool for retrieving Tumblr posts by tag and/or blog name, and the ability to add or remove posts from a favorites list
 
 ## Setup Instructions:  
-**After pulling from Github**
+**Pull repo from Github** 
+  1. run "git pull https://github.com/cadenwang/Tumblr-Favorites-Tool.git" in Terminal
+
 **In the Terminal, navigate to the folder and run the following commands:**
   1. npm install (will install package dependencies)
   2. npm start (will start the server)
