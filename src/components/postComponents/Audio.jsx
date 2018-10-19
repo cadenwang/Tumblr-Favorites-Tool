@@ -12,11 +12,13 @@ const Audio = (props) => {
     return {__html: type}
   }
   return (
-    <Div>
+    <div>
       <Author post={props.post} index={props.index} isFavorited={props.isFavorited} addToFavorites={props.addToFavorites} removeFromFavorites={props.removeFromFavorites}/>
-      <div dangerouslySetInnerHTML={createMarkup(props.post.embed)}/>
-      <div dangerouslySetInnerHTML={createMarkup(props.post.caption)}/>
-    </Div>
+      <Div>
+        <div dangerouslySetInnerHTML={createMarkup(props.post.embed)}/>
+        <div dangerouslySetInnerHTML={createMarkup(props.post.caption)}/>
+      </Div>
+    </div>
   )
 }
 

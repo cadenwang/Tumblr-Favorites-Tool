@@ -11,10 +11,12 @@ const Div = styled.div`
 
 const Chat = (props) => {
   return (
-    <Div>
+    <div>
       <Author post={props.post} index={props.index} isFavorited={props.isFavorited} addToFavorites={props.addToFavorites} removeFromFavorites={props.removeFromFavorites}/>
+      <Div>
       {props.post.dialogue.map((message, index)=> <ChatMessage chat={message} />)}
-    </Div>
+      </Div>
+    </div>
   )
 }
 

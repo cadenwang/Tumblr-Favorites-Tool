@@ -12,11 +12,13 @@ const Text = (props) => {
     return {__html: props.post.body}
   }
   return ( 
-    <Div>
+    <div>
       <Author post={props.post} index={props.index} isFavorited={props.isFavorited} addToFavorites={props.addToFavorites} removeFromFavorites={props.removeFromFavorites}/>
-      <div dangerouslySetInnerHTML={createMarkup()}>
-      </div>
-    </Div>
+      <Div>
+        <div dangerouslySetInnerHTML={createMarkup()}>
+        </div>
+      </Div>
+    </div>
   );
 }
 

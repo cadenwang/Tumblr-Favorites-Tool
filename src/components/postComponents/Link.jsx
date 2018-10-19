@@ -17,11 +17,13 @@ const Link = (props) => {
     return {__html: props.post.description}
   }
   return (  
-    <Div>
+    <div>
       <Author post={props.post} index={props.index} isFavorited={props.isFavorited} addToFavorites={props.addToFavorites} removeFromFavorites={props.removeFromFavorites}/>
-      <A href={props.post.url}>{props.post.title}</A>
-      <div dangerouslySetInnerHTML={createMarkup()}></div>
-    </Div>
+      <Div>
+        <A href={props.post.url}>{props.post.title}</A>
+        <div dangerouslySetInnerHTML={createMarkup()}></div>
+      </Div>
+    </div>
   );
 }
 

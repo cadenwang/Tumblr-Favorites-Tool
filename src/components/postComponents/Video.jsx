@@ -12,13 +12,15 @@ const Video = (props) => {
     return {__html: props.post.caption}
   }
   return ( 
-    <Div>
+    <div>
       <Author post={props.post} index={props.index} isFavorited={props.isFavorited} addToFavorites={props.addToFavorites} removeFromFavorites={props.removeFromFavorites}/>
-      <video width="320" height="240" controls>
-        <source src={props.post.video_url} type='video/mp4' />
-      </video>
-      <div dangerouslySetInnerHTML={createMarkup()} />
-    </Div>
+      <Div>
+        <video width="320" height="240" controls>
+          <source src={props.post.video_url} type='video/mp4' />
+        </video>
+        <div dangerouslySetInnerHTML={createMarkup()} />
+      </Div>
+    </div>
   );
 }
 

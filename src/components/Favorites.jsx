@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import Post from './Post.jsx';
 
 const Div = styled.div`
-  margin-left: 10px;
+  /* margin-left: 4px; */
   color: white;
   height: 97%;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: black;
-  border: 1px solid black;
+  border-left: 2px solid white;
 `
 
 const Header = styled.div`
@@ -17,6 +17,8 @@ const Header = styled.div`
   padding: 25px;
   font-size: 20px;
   text-align: center;
+  border-bottom: 2px solid white;
+  border-radius: 4px;
 `
 
 export default class Favorites extends Component {

@@ -11,12 +11,8 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: white;
-  margin: 10px;
+  /* margin: 5px; */
 `
-
-const LeftDivs = styled.div`
-`
-
 
 export default class App extends Component {
   constructor(props) {
@@ -94,14 +90,14 @@ export default class App extends Component {
   render() {
     return (
       <Wrapper>
-        <LeftDivs>
+        <div>
           <Search blog={this.blog} 
                   tag={this.tag} 
                   handleSearch={this.handleSearch.bind(this)}/>
           <Posts posts={this.state.posts} 
                  addToFavorites={this.addToFavorites.bind(this)} 
                  />
-        </LeftDivs>
+        </div>
         <Favorites favorites={this.state.favorites} 
                    removeFromFavorites={this.removeFromFavorites.bind(this)}/>
       </Wrapper>

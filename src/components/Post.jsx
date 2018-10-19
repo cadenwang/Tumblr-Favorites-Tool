@@ -11,10 +11,10 @@ import Audio from './postComponents/Audio.jsx';
 import Chat from './postComponents/Chat.jsx';
 
 const Div = styled.div`
-  color: white;
-  background-color: #42cef4;
-  margin: 0 0 0px 0;
-  border-top: 6px solid black;
+  color: black;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 4px;
 `
 export default class Post extends Component {
   constructor(props) {

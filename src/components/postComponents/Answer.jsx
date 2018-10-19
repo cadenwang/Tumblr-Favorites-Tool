@@ -20,18 +20,20 @@ const Answer = (props) => {
     return {__html: props.post.answer}
   }
   return (
-    <Div>
+    <div>
       <Author post={props.post} index={props.index} isFavorited={props.isFavorited} addToFavorites={props.addToFavorites} removeFromFavorites={props.removeFromFavorites}/>
-      <Question>
-        <Asker>
-          {props.post.asking_name + ' asked:'}
-        </Asker>
-        <div>
-          {props.post.question}
-        </div>
-      </Question>
-      <div dangerouslySetInnerHTML={createMarkup()} />
-    </Div>
+      <Div>
+        <Question>
+          <Asker>
+            {props.post.asking_name + ' asked:'}
+          </Asker>
+          <div>
+            {props.post.question}
+          </div>
+        </Question>
+        <div dangerouslySetInnerHTML={createMarkup()} />
+      </Div>
+    </div>
   )
 }
 

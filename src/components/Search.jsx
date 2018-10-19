@@ -4,21 +4,21 @@ import styled from 'styled-components';
 import SearchButton from './searchComponents/SearchButton.jsx'
 
 const Form = styled.form`
-  padding: 24px 0 24px 15%;
+  padding: 30px 0 30px 10vw;
   font-weight: bold;
   font-size: 16px;
   color: white;
-  background-color: #42cef4;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  border: 1px solid black;
+  background-color: black;
+  border-radius: 4px;
+  /* margin-bottom: 4px; */
+  border-bottom: 2px solid white;
 
 `
 
 const Input = styled.input`
   margin: 15px;
   width: 50;
-  border-radius: 4px;
+  border-radius: 5px;
   width: 20%;
 `
 

@@ -14,7 +14,7 @@ const Photo = (props) => {
   }
   return (  
     <div>
-      <Author post={props.post} postIndex={props.postIndex} index={props.index} isFavorited={props.isFavorited} addToFavorites={props.addToFavorites} removeFromFavorites={props.removeFromFavorites}/>
+      <Author post={props.post} index={props.index} isFavorited={props.isFavorited} addToFavorites={props.addToFavorites} removeFromFavorites={props.removeFromFavorites}/>
       <Div dangerouslySetInnerHTML={createMarkup()}>
       </Div>
       {props.post.photos.map((photo, index) => <PhotoSize photo={photo}/>)}
