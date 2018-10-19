@@ -6,7 +6,7 @@ import Author from './Author.jsx';
 const Div = styled.div`
   padding: 20px;
 `
-
+//Handles Text type posts
 const Text = (props) => {
   function createMarkup() {
     return {__html: props.post.body}

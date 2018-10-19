@@ -10,6 +10,8 @@ const Button = styled.button`
   color: white;
   font-size: 16px;
 `
+
+//The Search button component that triggers an API request with blog and/or tag name
 const SearchButton = (props) => {
   return (  
     <Button onClick={props.handleSearch}>

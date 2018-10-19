@@ -9,6 +9,7 @@ const Div = styled.div`
   margin: 20px;
 `
 
+//Handles Chat type posts
 const Chat = (props) => {
   return (
     <div>

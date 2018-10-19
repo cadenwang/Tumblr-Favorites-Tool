@@ -6,7 +6,6 @@ const Div = styled.div`
   font-weight: bold;
   background-color: black;
   color: white;
-  border-radius: 4px;
 `
 
 const Button = styled.button`
@@ -26,6 +25,7 @@ const RedButton = styled.button`
   background-color: black;
 `
 
+//Places the blogger's name and the "add and remove favorite" buttons
 const Author = (props) => {
   if (props.isFavorited === true) {
     return (

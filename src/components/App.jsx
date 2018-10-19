@@ -11,7 +11,6 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: white;
-  /* margin: 5px; */
 `
 
 export default class App extends Component {
@@ -65,22 +64,27 @@ export default class App extends Component {
 
   addToFavorites(post) {
     let found = false;
+    //for each post:
     this.state.favorites.forEach((p) => {
+      //Check if the post already exists inside the favorites list
       if (p.id === post.id) {
         found = true;
       }
     })
+    //if the post isn't already in the favorites list, add to list
     if (!found) {
       this.state.favorites.push(post);
       this.setState({
         favorites: [...this.state.favorites]
       })
     } else {
+      //if post is found, notify user
       alert('This post is already favorited!');
     }
   }
 
   removeFromFavorites(index) {
+    //remove the post from the favorite's array
     this.state.favorites.splice(index, 1);
     this.setState({
       favorites: [...this.state.favorites]

@@ -5,6 +5,7 @@ const Img=styled.img`
   padding: 20px;
 `
 
+//Handles the sizing of Photo type posts, starting from smaller photos to original size
 const PhotoSize = (props) => {
   if (props.photo.alt_sizes[4]) {
     return (  

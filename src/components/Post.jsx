@@ -28,6 +28,7 @@ export default class Post extends Component {
     this.toggleFavorited();
   }
 
+  //check if the post is a favorited post, to determine whether to add a "add favorite" button or a "remove"
   toggleFavorited() {
     if (this.props.favorite) {
       this.setState({
@@ -37,7 +38,6 @@ export default class Post extends Component {
   }
 
   render() { 
-    console.log(this.props.post);
       //if post type is a 'Photo'------------------------
     if (this.props.post.type === 'photo') {
       return (  

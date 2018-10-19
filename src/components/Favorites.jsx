@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Post from './Post.jsx';
 
 const Div = styled.div`
-  /* margin-left: 4px; */
   color: white;
   height: 97%;
   border-radius: 4px;
@@ -20,20 +19,15 @@ const Header = styled.div`
   border-bottom: 2px solid white;
   border-radius: 4px;
 `
-
-export default class Favorites extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
-  render() { 
-    return (  
-      <Div>
+const Favorites = (props) => {
+  return (  
+    <Div>
         <Header>
           FAVORITES
         </Header>
-        {this.props.favorites.map((post, index) => <Post post={post} index={index} favorite={true} removeFromFavorites={this.props.removeFromFavorites}/> )}
+        {props.favorites.map((post, index) => <Post post={post} index={index} favorite={true} removeFromFavorites={props.removeFromFavorites}/> )}
       </Div>
-    );
-  }
+  );
 }
+
+export default Favorites;

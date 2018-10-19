@@ -7,6 +7,7 @@ const Div = styled.div`
   margin: 20px;
 `
 
+//Handles Audio type posts
 const Audio = (props) => {
   function createMarkup(type) {
     return {__html: type}

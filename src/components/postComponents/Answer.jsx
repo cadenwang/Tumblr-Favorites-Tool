@@ -6,7 +6,6 @@ import Author from './Author.jsx';
 const Div = styled.div`
   margin: 20px;
 `
-
 const Asker = styled.div`
   font-weight: bold;
 `
@@ -14,6 +13,8 @@ const Question = styled.div`
   background: lightgray;
   padding: 20px;
 `
+
+//Handles Answer type posts
 
 const Answer = (props) => {
   function createMarkup() {

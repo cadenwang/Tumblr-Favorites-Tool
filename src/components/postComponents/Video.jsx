@@ -6,7 +6,7 @@ import Author from './Author.jsx';
 const Div = styled.div`
   margin: 20px;
 `
-
+//Handles Video type posts
 const Video = (props) => {
   function createMarkup() {
     return {__html: props.post.caption}

@@ -8,6 +8,7 @@ const Div = styled.div`
   padding: 20px;
 `
 
+//Handles Photo type posts
 const Photo = (props) => {
   function createMarkup() {
     return {__html: props.post.caption}

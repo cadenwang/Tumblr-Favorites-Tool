@@ -10,7 +10,6 @@ const Form = styled.form`
   color: white;
   background-color: black;
   border-radius: 4px;
-  /* margin-bottom: 4px; */
   border-bottom: 2px solid white;
 
 `
@@ -22,24 +21,17 @@ const Input = styled.input`
   width: 20%;
 `
 
-export default class Search extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-    }
-
-  }
-
-  render() {
-    return (
-      <Form>
-          Blog:
-          <Input type="text" ref={this.props.blog}></Input>
-          Tag:
-          <Input type="text" ref={this.props.tag}></Input>
-        <SearchButton handleSearch={this.props.handleSearch}/>
-      </Form>
-    )
-  }
+//Search Container
+const Search = (props) => {
+  return (  
+    <Form>
+      Blog:
+      <Input type="text" ref={props.blog}></Input>
+      Tag:
+      <Input type="text" ref={props.tag}></Input>
+      <SearchButton handleSearch={props.handleSearch}/>
+    </Form>
+  );
 }
+
+export default Search;

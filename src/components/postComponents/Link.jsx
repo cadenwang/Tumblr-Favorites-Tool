@@ -11,7 +11,7 @@ const A = styled.a`
   font-weight: bold;
   font-size: 18px;
 `
-
+//Handles Link type posts
 const Link = (props) => {
   function createMarkup() {
     return {__html: props.post.description}
